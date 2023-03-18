@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main- A program that prints a line with a puts function
  *
  * Return : Always 0 (Success)
  *
- * puts - write string to the output stream without the null charater
+ * puts - prints a line with a puts function
  */
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle, \n");
+	puts("\"Programming is like building a multilingual puzzle,");
 	return (0);
 }
 
