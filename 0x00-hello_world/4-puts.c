@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Returns : Always 0 (Success)
- * puts - prints a line with a puts funtion followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
