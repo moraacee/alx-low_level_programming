@@ -3,9 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Return - Always 0 (Success)
- *
- * printf - prints output to a file followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
