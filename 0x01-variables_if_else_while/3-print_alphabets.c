@@ -8,20 +8,13 @@
  */
 int main(void)
 {
-	int n;
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	for (i = 0; i < 52; i++)
 	{
-		printf("%d is postive\n", n);
+		putchar(alp[i]);
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
+	putchar('\n');
 	return (0);
 }
