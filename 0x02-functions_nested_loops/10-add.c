@@ -2,6 +2,7 @@
 
 
  /**
+  * Main - Entry point
   * add - adds two integers and returns the result
   * @a: the  first integer to add
   * @b: the second integer to add
