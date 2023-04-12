@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * *_strdup - returns a pointer to a new string
- *@str: duplicate of the string
+ * *_strdup - Duplicates a String
+ *@str: Duplicate of the String
  *
- * Return: NULL if str is NULL
+ * Return: A pointer to a  string
  */
 
 char *_strdup(char *str)
@@ -16,8 +16,8 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	size_t len = strlen(str);
-	char *dup_str = (char *)malloc((len + 1) * sizeof(char));
+	size_t length  = strlen(str);
+	char *dup_str = (char *) malloc((length + 1) * sizeof(char));
 
 	if (dup_str == NULL)
 	{
