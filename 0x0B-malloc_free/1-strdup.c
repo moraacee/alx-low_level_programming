@@ -11,20 +11,25 @@
 
 char *_strdup(char *str)
 {
+	int i;
+	char *s;
+
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	size_t length  = strlen(str);
-	char *dup_str = (char *) malloc((length + 1) * sizeof(char));
+	for (i = 0; str[i] != '\0'; i++)
+		continue;
 
-	if (dup_str == NULL)
-	{
+	i++;
+	s = malloc(sizeof(char) * i);
+	if (s == NULL)
 		return (NULL);
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		s[i] = str[i];
 	}
+	s[i] = '\0';
 
-	strcpy(dup_str, str);
-
-	return (dup_str);
+	return (s);
 }
