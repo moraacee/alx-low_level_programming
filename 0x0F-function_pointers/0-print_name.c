@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stdio.h>
+
 /**
  * print_name - Prints a name using pointer to a function
  * @name: String to pass
@@ -7,10 +8,12 @@
  *
  * Return: Nothing
  */
+
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || f == NULL)
-		return;
-
-		f(name);
+	while (*name != '\0')
+	{
+		(*f)(*name);
+		name++;
+	}
 }
