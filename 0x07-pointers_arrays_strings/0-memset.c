@@ -5,7 +5,7 @@
 * _memset - fill a block of memory with a constant value
 * @s: Pointer to the beggining of memory to be fillled
 * @b: Constant value to fill the memory with
-* @n: number of bytes to fill
+* @n: number of bytes
 *
 * Return: changed array with new value for n bytes
 */
